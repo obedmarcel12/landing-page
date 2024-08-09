@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-items">
+        <p class="RemoveBg">RemoveBg</p>
+        <p>About</p>
+        <p>Service</p>
+        <p>Contact</p>
+        <p>Home!</p>
+      </nav>
+      <nav>
+        <h3 class="login">Login</h3>
+        <ul class="flex">
+          <i class="bi bi-list hamburger-menu" onclick="toggleMenu()"></i>
+          <b class="hidden">RemoveBg</b>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="maindiv">
+        <h1>Welcome to Our Service</h1>
+        <p>
+          Sign up now to get exclusive access <br class="break" />
+          to our latest features and updates.
+        </p>
+        <form
+          action="/signup"
+          method="post"
+          style="
+            display: flex;
+            margin-top: 15px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4vh;
+          "
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            style="
+              border-radius: 20px;
+              width: 35vw;
+              padding-left: 25px;
+              height: 6vh;
+              outline: none;
+              border: 0;
+            "
+          />
+          <button
+            type="submit"
+            style="
+              background: blue;
+              color: white;
+              font-weight: bolder;
+              width: 37vw;
+              height: 6.5vh;
+              cursor: pointer;
+              border-radius: 4vh;
+              border: none;
+              font-family: sans-serif;
+            "
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
