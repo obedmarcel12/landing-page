@@ -14,7 +14,7 @@
     <header>
       <nav class="nav-items">
         <p class="RemoveBg">RemoveBg</p>
-        <p>About</p>
+        <p style="cursor: pointer" id="click">About</p>
         <p>Service</p>
         <p>Contact</p>
         <p>Home!</p>
@@ -35,9 +35,10 @@
           Sign up now to get exclusive access <br class="break" />
           to our latest features and updates.
         </p>
+        <!--  -->
         <form
-          action="/signup"
-          method="post"
+          id="form"
+          method="get"
           style="
             display: flex;
             margin-top: 15px;
@@ -48,6 +49,7 @@
           "
         >
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="Enter your email"
@@ -60,23 +62,13 @@
               border: 0;
             "
           />
-          <button
-            type="submit"
-            style="
-              background: blue;
-              color: white;
-              font-weight: bolder;
-              width: 37vw;
-              height: 6.5vh;
-              cursor: pointer;
-              border-radius: 4vh;
-              border: none;
-              font-family: sans-serif;
-            "
-          >
-            Sign Up
-          </button>
+          <div class="click">
+            <button id="submit" type="submit">Sign Up</button>
+          </div>
+
+          <div class="error"></div>
         </form>
+        <!--  -->
       </div>
     </main>
 

@@ -43,6 +43,7 @@ nav {
   border: 1px solid black;
   border-radius: 20px;
   font-family: sans-serif;
+  cursor: pointer;
   font-size: 2.8vh;
   color: rgb(77, 74, 74);
   font-weight: 500;
@@ -94,6 +95,34 @@ main {
 .break {
   display: none;
 }
+
+.click {
+  display: flex;
+  align-items: center;
+  gap: 4vh;
+}
+
+.click button {
+  cursor: pointer;
+  background: blue;
+  width: 37vw;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6vh;
+  border: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 2.5vh;
+  color: white;
+}
+
+.error {
+  color: red;
+}
+
+
 
 /* phone-view */
 @media (max-width: 450px) {
