@@ -30,9 +30,22 @@ const RemoveBg = document.querySelector('#RemoveBg')
 RemoveBg.addEventListener('click', function () {
   window.location.href = 'https://backround-removal.vercel.app/'
 })
+//
+const RemoveBgphoneview = document.querySelector('#hidden')
+RemoveBgphoneview.addEventListener('click', function () {
+  window.location.href = 'https://backround-removal.vercel.app/'
+})
 
 //
 const About = document.querySelector('#About')
 About.addEventListener('click', function () {
   window.location.href = 'https://obedmarcel12.github.io/My-Portfolio/'
+})
+
+window.addEventListener('load', () => {
+  const loader = document.querySelector('.loader')
+  loader.classList.add('loader-hidden')
+  loader.addEventListener('transitionend', () => {
+    document.body.removeChild('loader')
+  })
 })
