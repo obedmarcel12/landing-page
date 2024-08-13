@@ -24,3 +24,15 @@ document.querySelector('#form').addEventListener('submit', (e) => {
     error.innerText = message.join(' , ')
   }
 })
+
+//
+const RemoveBg = document.querySelector('#RemoveBg')
+RemoveBg.addEventListener('click', function () {
+  window.location.href = 'https://backround-removal.vercel.app/'
+})
+
+//
+const About = document.querySelector('#About')
+About.addEventListener('click', function () {
+  window.location.href = 'https://obedmarcel12.github.io/My-Portfolio/'
+})
